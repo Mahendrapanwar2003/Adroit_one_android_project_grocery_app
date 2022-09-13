@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/frament_dashboard"
+    tools:context=".ElectronicFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="5dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/tvCategoryId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All Category"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:padding="8dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/watercolorbackgroundcrav"
+                    />
+                <TextView
+                    android:id="@+id/tvElectronicId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Electronic"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:padding="8dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/watercolorbackgroundcrav"
+                    />
+                <TextView
+                    android:id="@+id/tvClothesId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clothes"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_marginHorizontal="5dp"
+                    android:padding="8dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/watercolorbackgroundcrav"
+                    />
+                <TextView
+                    android:id="@+id/tvShoesId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shoes"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:background="@drawable/watercolorbackgroundcrav"
+                    />
+                <TextView
+                    android:id="@+id/tvgroceryId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="grocery"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_marginHorizontal="5dp"
+                    android:padding="8dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/watercolorbackgroundcrav"
+                    />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/containerid">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerviewId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:horizontalSpacing="6dp"
+                android:numColumns="2"
+                android:verticalSpacing="6dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

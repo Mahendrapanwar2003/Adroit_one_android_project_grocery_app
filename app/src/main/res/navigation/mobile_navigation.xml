@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navDashBoardId">
+
+    <fragment
+        android:id="@+id/navDashBoardId"
+        android:name="com.example.adroit_one_.ui.dashboard.DashBoardFragment"
+        android:label="@string/dash_board"
+        tools:layout="@layout/fragment_dash_board" />
+    <fragment
+        android:id="@+id/navEditProfileId"
+        android:name="com.example.adroit_one_.ui.ProfileUpdate.UpdateProfileFragment"
+        android:label="@string/edit_profile"
+        tools:layout="@layout/fragment_update_profile" />
+    <fragment
+        android:id="@+id/navLogoutId"
+        android:name="com.example.adroit_one_.ui.Logout.LogoutFragment"
+        android:label="@string/logout"
+        tools:layout="@layout/fragment_logout" />
+</navigation>
